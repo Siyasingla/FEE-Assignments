@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            grid-area: header;
+        }
+        #div2{
+            grid-area:menu ;
+        }
+        #div3{
+            grid-area:main ;
+        }
+        #div4{
+            grid-area: right;
+        }
+        #div5{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            background-color: yellowgreen;
+            grid-template-areas:"header header header header"
+                                "menu  main main right "
+                                "menu  main main right"
+                                "menu  main main right"
+                                "menu footer footer footer ";
+        gap: 10px;
+        height: 100vh;
+        }
+.container div{
+    background-color: orangered;
+    color:black;
+    text-align: center;
+}
+@media (max-width:700px)
+{
+    .container{
+            grid-template-areas:"header header header header"
+                                "menu  menu menu menu "
+                                "main  main main main"
+                                "right right right right"
+                                "footer footer footer footer ";
+    }
+}
+@media (max-width:1000px) and (min-width:700px)
+{    .container{
+            grid-template-areas:"header header header header"
+                                "menu  menu menu menu "
+                                "main  main right right"
+                               "main main right right"
+                                "footer footer footer footer ";
+    }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="div1"><h1>Header</h1></div>
+        <div id="div2"><h1>Menu</h1></div>
+        <div id="div3"><h1>Main</h1></div>
+        <div id="div4"><h1>Right</h1></div>
+        <div id="div5"><h1>Footer</h1></div>
+    </div>
+</body>
+</html>

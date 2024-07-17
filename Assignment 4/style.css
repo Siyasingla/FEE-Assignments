@@ -1,0 +1,28 @@
+nav{
+    text-align: center;
+    margin:auto;
+}
+body{
+    background: #262626;
+}
+p{
+    color: yellowgreen;
+    font-family: fraunches;
+    padding-left: 10px ;
+}
+h1{
+text-align: center;
+font-size: 40px;
+font-family: serif;
+color:whitesmoke;
+border-bottom: 2px solid whitesmoke;
+padding: bottom 10px;
+}
+h2{
+    color: whitesmoke;
+    padding-left: 10px;
+    font-family: serif;
+}
+img{
+    padding: 10px;
+}
